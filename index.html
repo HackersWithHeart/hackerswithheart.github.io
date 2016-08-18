@@ -109,10 +109,24 @@
 							<p>We want to hear from you! Send us your email and we will be in touch!</p>
 						</header>
 
-						<form action="https://formspree.io/ahnaf@hackerswithheart.org" method="POST">
-    						<input type="text" name="name">
-    						<input type="email" name="_replyto">
-    						<input type="submit" value="Send">
+						<form action="//formspree.io/ahnaf@hackerswithheart.org" method="POST">
+						    <input type="hidden" name="_next" value="">
+							<input type="hidden" name="_cc" value="jared@hackerswithheart.org" />
+							<input type="hidden" name="_cc" value="cole@hackerswithheart.org" />
+						    <input type="hidden" name="_subject" id="_subject" value="Blog Contact Form">
+						    <input type="text" name="_gotcha" style="display:none" />
+
+						    <label for="contact_name">Name: </label>
+						    <input type="text" name="name" id="contact_name" required><br/>
+
+						    <label for="email">Email: </label>
+						    <input type="email" name="_replyto" id="email" required><br/>
+
+						    <label for="contact_comments">Comments: </label><br/>
+						    <textarea name="comments" id="contact_comments" required></textarea><br/>
+						    <p>
+						    <input type="submit" value="Send">
+						    </p>
 						</form>
 					</div>
 				</section>
